@@ -24,7 +24,7 @@ public class StaleElementExceptionExample extends BaseTest {
 		select.selectByIndex(2);
 		// ca urmare a selectiei se afce refresh la pagina
 		Thread.sleep(5000);
-		select.deselectByVisibleText("Sort by latest");
+		//select.deselectByVisibleText("Sort by latest");
 		//fix StaleElemnt
 		element = driver.findElement(By.name("orderby"));
 		select = new Select(element);
