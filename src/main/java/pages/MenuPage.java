@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class MenuPage {
 	
@@ -16,6 +18,9 @@ public class MenuPage {
 	public By loginLink = By.linkText("Login");
 	public By contactsLink = By.linkText("CONTACTS");
 	public By shopLink = By.linkText("BOOKS");
+	public By aboutlink=By.linkText("ABOUT");
+	public By bloglink=By.linkText("BLOG");
+	
 	/*public void navigatetoLogin(){
 		
 		driver.findElement(By.linkText("Login")).click();
@@ -28,7 +33,11 @@ public class MenuPage {
 //navigateTo(loginLink)
 //navigateTo(contactsLink)	
 	
-	
+	public void hoverElement(By locator) {
+		WebElement element = driver.findElement(locator);
+		Actions action = new Actions(driver);
+		action.moveToElement(element).perform();
+	}
 	
 	
 }
