@@ -8,14 +8,14 @@ import org.testng.annotations.BeforeClass;
 public class BaseTest {
 	
 	public WebDriver driver;
-	
+	//@Parameters({"url"})
 	@BeforeClass
-	public void setup() {
+	public void setup(String appUrl) {
 		driver= new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://keybooks.ro/");
+	driver.get("https://keybooks.ro/");
 		
-		
+		//driver.get(appUrl);
 	}
 	@AfterClass
 	
