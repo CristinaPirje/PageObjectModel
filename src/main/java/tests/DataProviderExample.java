@@ -57,7 +57,6 @@ public class DataProviderExample extends BaseTest {
 			
 		}else if(!sucess) {
 			assertTrue(login.checkMsgIsDisplayed(login.errorLoginMessage));
-	
 			
 		}
 			

@@ -20,6 +20,7 @@ public class MenuPage {
 	public By shopLink = By.linkText("BOOKS");
 	public By aboutlink=By.linkText("ABOUT");
 	public By bloglink=By.linkText("BLOG");
+	public By eventsLink= By.linkText("EVENTS");
 	
 	/*public void navigatetoLogin(){
 		
